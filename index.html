@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anora Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- -----------------header------------------- -->
+    <div id="header">
+        <div class="container">
+
+            <nav class="nav">
+
+                <h1><a href="#anora" class="logo"><span>A</span>nora</a></h1>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="bx bx-x" onclick="closemenu()"></i> 
+                </ul>
+                <i class="bx bx-menu" onclick="openmenu()"></i> 
+                
+            </nav>
+            
+            <div class="header-text">
+                
+                <div class="text-left">
+                    <p>Web Developer</p>
+                    <h1>Hi,I'm <span>Anora</span>  <br> Xakimxonova From Uzbekistan</h1>
+
+                    
+                </div>
+                
+                <div class="text-right">
+                    <img src="img/header img.jpg" alt="" class="right-img">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- -----------------------------about---------------- -->
+    
+    <div id="about">
+        <div class="container">
+            <div class="about-row">
+                <div class="about-col-1">
+                    <img src="img/about img.jpg" alt="">
+                </div>
+                
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p class="title">I am Anora Xakimxonova.I am 18.I am Web Developer.I am Proweb graduate.My teacher name is Ismoil Nishonaliyev.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Programmer</span><br>Designing Web Sites</li>
+                            <li><span>Web Development</span><br>Designing Web Aplications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span> <br>Proweb training center</li>
+                            
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ------------portfolio------------ -->
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/BAG1.png" alt="">
+                    <div class="layer">
+                        <h3>BAG</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium enim illum adipisci quis, qui id!</p>
+                        <a href="https://anoraxon.github.io/bag/"><i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/HERO1.png" alt="">
+                    <div class="layer">
+                        <h3>HERO HEADER</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium enim illum adipisci quis, qui id!</p>
+                        <a href="https://anoraxon.github.io/hero/"><i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/HBT1.png" alt="">
+                    <div class="layer">
+                        <h3>HBT HOTEL WEBSITE</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium enim illum adipisci quis, qui id!</p>
+                        <a href="https://anoraxon.github.io/hotel/"><i class="bx bx-link-external"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ---------contact---------- -->
+    
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="bx bx-envelope"></i>contactanoraxakimxonova@gmail.com</p>
+                    <p><i class="bx bx-phone-call"></i>94 036 05 22</p>
+                    <div class="social-icons">
+                        <a href="https://t.me/missnora_005" target="_blank"><i class="bx bxl-telegram"></i></a>
+                        <a href="https://www.instagram.com/nora__005/" target="_blank"><i class="bx bxl-instagram"></i></a>
+                        <a href="tel:+998940360522"><i class="bx bx-phone"></i></a>  
+                    </div>
+                    <a href="" class="btn btn2">Download</a>
+                </div>
+                
+                
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+   
+    </div>
+
+
+    <!-- ------------footer---------- -->
+
+    <div class="footer">
+        <div class="container">
+
+        <div class="footer__content">
+            <p id="anora" class="footer-title">Anora Xakimxonova</p>
+
+            <ul class="footer-list">
+               <li><a href="#header" class="footer-link">Home</a></li>
+               <li><a href="#about" class="footer-link">About</a></li>
+               <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+               <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+
+
+            <div class="social-icons icons2">
+                        <a href="https://t.me/missnora_005" target="_blank"><i class="bx bxl-telegram"></i></a>
+                        <a href="https://www.instagram.com/nora__005/" target="_blank"><i class="bx bxl-instagram"></i></a>
+                        <a href="tel:+998940360522"><i class="bx bx-phone"></i></a>
+                    </div>
+
+            <p class="footer-subtitle">Website Portfolio Made By <i class="bx bxs-heart"></i> Anora</p>
+        
+
+        </div>
+
+
+
+
+        
+    </div>
+    </div>
+    
+    
+  <script src="script/main.js"></script>
+    
+</body>
+</html>
